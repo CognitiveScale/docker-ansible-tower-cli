@@ -1,4 +1,5 @@
 FROM c12e/debian
+ENV SERVICE_NAME=tower-cli
 
 RUN apt-get update && \
    DEBIAN_FRONTEND=noninteractive apt-get -y install python python-pip && \
